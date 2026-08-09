@@ -1,6 +1,6 @@
 {
   "name": "@cavokfly/article-preview",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Renders your article JSON (title, section, body blocks) into a newspaper-style preview, shared across your React apps.",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -22,7 +22,8 @@
   },
   "scripts": {
     "dev": "tsup --watch",
-    "build": "tsup"
+    "build": "tsup",
+    "playground": "npm run dev --prefix test"
   },
   "peerDependencies": {
     "react": ">=17",
