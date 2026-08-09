@@ -1,0 +1,144 @@
+.ap-root {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #121212;
+}
+
+.ap-eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.ap-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+
+.ap-excerpt {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  line-height: 1.4;
+  color: #333;
+  margin: 0 0 20px;
+}
+
+.ap-divider {
+  border-top: 1px solid #e2e2e2;
+  margin: 20px 0;
+}
+
+.ap-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ap-meta-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.ap-dates {
+  color: #767676;
+}
+
+.ap-cover {
+  margin: 0 0 8px;
+}
+
+.ap-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ap-body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #1a1a1a;
+}
+
+.ap-paragraph {
+  margin: 0 0 20px;
+}
+
+.ap-heading {
+  font-weight: 700;
+  margin: 32px 0 12px;
+  line-height: 1.3;
+}
+
+.ap-heading--1 { font-size: 28px; }
+.ap-heading--2 { font-size: 24px; }
+.ap-heading--3 { font-size: 20px; }
+.ap-heading--4,
+.ap-heading--5,
+.ap-heading--6 { font-size: 18px; }
+
+.ap-quote {
+  margin: 24px 0;
+  padding-left: 20px;
+  border-left: 3px solid #c9302c;
+  font-style: italic;
+  color: #333;
+}
+
+.ap-quote-attribution {
+  display: block;
+  margin-top: 6px;
+  font-style: normal;
+  font-size: 14px;
+  color: #767676;
+}
+
+.ap-image {
+  margin: 24px 0;
+}
+
+.ap-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ap-image figcaption {
+  font-size: 13px;
+  color: #767676;
+  margin-top: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.ap-list {
+  margin: 0 0 20px;
+  padding-left: 24px;
+}
+
+.ap-list li {
+  margin-bottom: 8px;
+}
+
+.ap-unknown-block {
+  font-family: monospace;
+  font-size: 12px;
+  color: #a33;
+  background: #fdf0f0;
+  border: 1px dashed #e0b4b4;
+  padding: 6px 10px;
+  margin: 8px 0;
+  border-radius: 4px;
+}
