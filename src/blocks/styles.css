@@ -1,0 +1,25 @@
+.ap-youtube {
+    margin: 1.5rem 0;
+}
+
+.ap-youtube iframe {
+    aspect-ratio: 16 / 9;
+    border: 0;
+    display: block;
+    width: 100%;
+}
+
+.ap-video {
+    margin: 1.5rem 0;
+}
+
+.ap-video video {
+    display: block;
+    max-width: 100%;
+}
+
+.ap-video figcaption {
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
