@@ -9,5 +9,5 @@ export default defineConfig({
   clean: true,
   external: ["react", "react-dom"],
   injectStyle: false,
-  loader: { ".css": "copy" },
+  loader: { ".js": "jsx", ".css": "copy" },
 });
