@@ -9,6 +9,11 @@ export const sampleArticle = {
   cover_image_url: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1400&q=80",
   body: [
     {
+      type: "heading",
+      level: 1,
+      text: "Clear skies over the Cordillera: a morning above the valley",
+    },
+    {
       type: "paragraph",
       text: "We launched just after sunrise with light winds and a thin haze hanging over the valley floor. Visibility improved quickly as we climbed through two thousand feet.",
     },

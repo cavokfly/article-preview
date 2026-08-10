@@ -15,6 +15,17 @@ function formatDate(iso) {
   }
 }
 
+function CanRenderBlock(article, block, index) {
+  // return false if the first block is a heading level 1 
+  // with the same text as the article title
+  if (index === 0 && block.type === "heading" 
+    && block.level === 1 
+    && block.text.trim().toLowerCase() === article.title.trim().toLowerCase()) {
+    return false;
+  }
+  return true;
+}
+
 /**
  * Renders an article JSON object (title, section, excerpt, body[], etc.)
  * as a readable preview page.
@@ -67,7 +78,10 @@ export function ArticlePreview({ article, renderers, byline }) {
       <div className="ap-body">
         {(article.body || []).map((block, i) => {
           const Renderer = blockRenderers[block.type] || UnknownBlock;
-          return <Renderer block={block} index={i} key={i} />;
+          if (CanRenderBlock(article, block, i)) {
+            return <Renderer block={block} index={i} key={i} />;
+          }
+          return null;
         })}
       </div>
     </article>
