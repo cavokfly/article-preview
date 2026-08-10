@@ -9,6 +9,7 @@ export function UnknownBlock({ block }) {
     return (
       <div className="ap-unknown-block" data-block-type={block.type}>
         {`[unrecognized block type: "${block.type}"]`}
+        <pre>{JSON.stringify(block, null, 2)}</pre>
       </div>
     );
   }
