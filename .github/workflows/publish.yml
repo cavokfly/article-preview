@@ -40,6 +40,18 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Require NPM_TOKEN
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          if [ -z "$NODE_AUTH_TOKEN" ]; then
+            echo "::error::secrets.NPM_TOKEN is empty for this job."
+            echo "Because this job uses environment: Production, add NPM_TOKEN as a Production environment secret"
+            echo "(Settings → Environments → Production → Environment secrets), or re-set the repository secret."
+            echo "Use an npm Automation token (or Granular Access Token) with publish permission for @cavokfly."
+            exit 1
+          fi
+
       - name: Publish to npm
         run: npm publish --provenance --access public
         env:
